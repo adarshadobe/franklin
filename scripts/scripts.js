@@ -11,7 +11,8 @@ import {
   waitForLCP,
   loadBlocks,
   loadCSS,
-} from './lib-franklin.js';
+  fetchPlaceholders,
+} from "./lib-franklin.js";
 
 const LCP_BLOCKS = []; // add your LCP blocks to the list
 window.hlx.RUM_GENERATION = 'project-1'; // add your RUM generation information here
@@ -125,6 +126,7 @@ function loadDelayed() {
 async function loadPage() {
   await loadEager(document);
   await loadLazy(document);
+  fetchPlaceholders()
   loadDelayed();
 }
 

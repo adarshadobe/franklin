@@ -124,9 +124,9 @@ function loadDelayed() {
 }
 
 async function loadPage() {
+  await fetchPlaceholders();
   await loadEager(document);
   await loadLazy(document);
-  fetchPlaceholders()
   loadDelayed();
 }
 

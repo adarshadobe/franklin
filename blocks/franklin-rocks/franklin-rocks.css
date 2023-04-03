@@ -1,4 +1,7 @@
-.franklin-rocks{
+.franklin-rocks-container{
     background-color: beige;
+}
+
+.franklin-rocks{
     color: black
 }

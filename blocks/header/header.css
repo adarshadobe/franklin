@@ -201,7 +201,7 @@ header nav .nav-sections ul > li {
   padding: 0 1rem;
 }
 header nav .nav-sections ul > li:hover{
-  background-color: var(--link-hove-color);
+  background-color: var(--link-hover-color);
 }
 
 header nav .nav-sections ul > li > ul {

@@ -5,6 +5,7 @@ export default function decorate(block) {
   const ul = document.createElement('ul');
   const allChild = [...block.children];
   const title = document.createElement('h2');
+  const footer = document.createElement("div");
   allChild.forEach((row, index) => {
     if(index === 0){
       title.className="article-title";
@@ -12,6 +13,7 @@ export default function decorate(block) {
       return;
     }
     if(index===allChild.length-1){
+      footer.innerHTML=row.innerHTML;
       return;
     }
     const li = document.createElement("li");
@@ -27,4 +29,5 @@ export default function decorate(block) {
   block.innerHTML= '';
   block.append(title);
   block.append(ul);
+  block.append(footer);
 }

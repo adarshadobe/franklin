@@ -1,7 +1,6 @@
 main .form {
   background-color: white;
   padding: var(--spacing-m);
-  box-shadow: 0 1px 6px rgb(34 34 34 / 10%);
 }
 
 main .form h2 {
@@ -109,9 +108,8 @@ main .form .form-checkbox-wrapper label {
 
 main .form .button {
   cursor: pointer;
-  background: rgb(20 115 230);
-  color: white;
-  border-radius: 16px;
+  background: var(--link-color);
+  color: var(--link-text-color);
   font-size: var(--type-body-s-size);
   font-weight: 300;
   padding: 6px 16px;
@@ -121,5 +119,4 @@ main .form .button {
 
 main .form .form-submit-wrapper {
   display: flex;
-  justify-content: flex-end;
 }
